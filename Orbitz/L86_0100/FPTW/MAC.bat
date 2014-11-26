@@ -1,0 +1,1 @@
+EEUPDATEW32 /nic=1 /mac %1 /calcchksum

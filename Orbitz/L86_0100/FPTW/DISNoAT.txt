@@ -1,0 +1,9 @@
+
+OEMSkuRule = 
+    Enable Intel (R) Standard Manageability; Disable Intel (R) AMT = enable
+    Manageability Application = enable
+    Intel (R) Anti-Theft Technology = disable
+    PAVP                 = disable
+    Intel (R) ME Network Service =
+    KVM                  = disable
+    TLS                  = enable

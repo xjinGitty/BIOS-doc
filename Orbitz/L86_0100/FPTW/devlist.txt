@@ -1,0 +1,97 @@
+PCI\VEN_8086&DEV_9C03&SUBSYS_213E103C&REV_03\3&33FD14CA&0&FA: Intel(R) 8 Series Chipset Family SATA AHCI Controller
+ACPI\PNP0C01\2                                              : System board
+ACPI\PNP0C02\1                                              : Motherboard resources
+ACPI\PNP0C02\2                                              : Motherboard resources
+ACPI\PNP0C09\1                                              : Microsoft ACPI-Compliant Embedded Controller
+ACPI\PNP0C0A\1                                              : Microsoft ACPI-Compliant Control Method Battery
+BTHENUM\{F0B2DD71-FB14-4E30-A62D-931874BF282F}_LOCALMFG&0000\8&7CC0E0A&0&000000000000_00000000: Bluetooth Server
+ACPI\THERMALZONE\CPUZ                                       : ACPI Thermal Zone
+ROOT\VOLMGR\0000                                            : Volume Manager
+PCI\VEN_8086&DEV_9C10&SUBSYS_213E103C&REV_E3\3&33FD14CA&0&E0: Intel(R) 8 Series PCI Express Root Port #1 - 9C10
+PCI\VEN_10EC&DEV_5227&SUBSYS_213E103C&REV_01\00000001004CE00000: Realtek PCIE CardReader
+ACPI\PNP0000\4&6792AF4&0                                    : Programmable interrupt controller
+ACPI\PNP0A08\2&DABA3FF&1                                    : PCI Express Root Complex
+ROOT\BASICDISPLAY\0000                                      : Microsoft Basic Display Driver
+SWD\MMDEVAPI\{0.0.1.00000000}.{C7CD6431-21F9-4F2A-A7E3-1F603A964BC0}: Stereo Mix (IDT High Definition Audio CODEC)
+ACPI\HPQ6001\2&DABA3FF&1
+ACPI\PNP0C0E\2&DABA3FF&1                                    : ACPI Sleep Button
+ROOT\MS_NDISWANIP\0000                                      : WAN Miniport (IP)
+ROOT\MS_SSTPMINIPORT\0000                                   : WAN Miniport (SSTP)
+ROOT\MS_AGILEVPNMINIPORT\0000                               : WAN Miniport (IKEv2)
+PCI\VEN_8086&DEV_9C22&SUBSYS_213E103C&REV_03\3&33FD14CA&0&FB: Synaptics SMBus Driver
+ACPI\PNP0C14\0                                              : Microsoft Windows Management Interface for ACPI
+ACPI\PNP0103\0                                              : High precision event timer
+PCI\VEN_8086&DEV_155A&SUBSYS_213E103C&REV_03\3&33FD14CA&0&C8: Intel(R) Ethernet Connection I218-LM
+BTH\MS_BTHBRB\7&35166D2&0&1                                 : Microsoft Bluetooth Enumerator
+ROOT\COMPOSITEBUS\0000                                      : Composite Bus Enumerator
+ACPI\IFX0102\4&6792AF4&0                                    : Trusted Platform Module 1.2
+ROOT\VDRVROOT\0000                                          : Microsoft Virtual Drive Enumerator
+ACPI\PNP0A06\4&6792AF4&0                                    : Extended IO Bus
+USB\VID_8087&PID_07DC\6&1516E960&0&4                        : Intel(R) Wireless Bluetooth(R) 4.0 + HS Adapter
+ACPI\ACPI0003\2&DABA3FF&1                                   : Microsoft AC Adapter
+ROOT\SPACEPORT\0000                                         : Microsoft Storage Spaces Controller
+ROOT\KDNIC\0000                                             : Microsoft Kernel Debug Network Adapter
+STORAGE\VOLUMESNAPSHOT\HARDDISKVOLUMESNAPSHOT1              : Generic volume shadow copy
+BTH\MS_BTHLE\7&35166D2&0&0                                  : Microsoft Bluetooth LE Enumerator
+ACPI\PNP0C0D\2&DABA3FF&1                                    : ACPI Lid
+PCI\VEN_8086&DEV_9C12&SUBSYS_213E103C&REV_E3\3&33FD14CA&0&E1: Intel(R) 8 Series PCI Express Root Port #2 - 9C12
+ROOT\MS_NDISWANIPV6\0000                                    : WAN Miniport (IPv6)
+SCSI\DISK&VEN_INTEL&PROD_SSDSCKGW180A4\4&27FABB49&0&030000  : INTEL SSDSCKGW180A4
+ACPI\THERMALZONE\PCHZ                                       : ACPI Thermal Zone
+ACPI\PNP0100\4&6792AF4&0                                    : System timer
+ROOT\UMBUS\0000                                             : UMBus Root Bus Enumerator
+USB\VID_05C8&PID_035B\200901010001                          : USB Composite Device
+ACPI\THERMALZONE\EXTZ                                       : ACPI Thermal Zone
+ACPI\INT0800\4&6792AF4&0                                    : Intel(R) 82802 Firmware Hub Device
+SWD\MSDAS\{CE958E9A-424F-4C88-86F4-11314821E75A}            : Microsoft Device Association Root Enumerator
+ROOT\ACPI_HAL\0000                                          : ACPI x64-based PC
+SWD\MMDEVAPI\{0.0.1.00000000}.{1E467FFF-EB98-416B-BAC5-081C3CFEA943}: Internal Microphone Array (IDT High Definition Audio CODEC)
+ACPI\SYN300D\4&6792AF4&0                                    : Synaptics SMBus TouchPad
+{A87C2E0F-9A46-46B8-8EC4-E33355FBE1F7}\KEYBOARDFILTER\5&1C993D17&0&01: Keyboard_Filter_01
+ACPI_HAL\PNP0C08\0                                          : Microsoft ACPI-Compliant System
+USB\ROOT_HUB30\4&2D3F67A7&0&0                               : USB Root Hub (xHCI)
+ROOT\BASICRENDER\0000                                       : Microsoft Basic Render Driver
+USB\ROOT_HUB20\4&19042B0&0                                  : USB Root Hub
+DISPLAY\CMN1482\4&23126169&0&UID68092928                    : Generic PnP Monitor
+ROOT\MS_PPTPMINIPORT\0000                                   : WAN Miniport (PPTP)
+BTH\MS_RFCOMM\7&35166D2&0&0                                 : Bluetooth Device (RFCOMM Protocol TDI)
+ACPI\FIXEDBUTTON\2&DABA3FF&1                                : ACPI Fixed Feature Button
+ROOT\MS_NDISWANBH\0000                                      : WAN Miniport (Network Monitor)
+USB\VID_8087&PID_8000\5&655CCE&0&1                          : Generic USB Hub
+PCI\VEN_8086&DEV_9C43&SUBSYS_213E103C&REV_03\3&33FD14CA&0&F8: Intel(R) 8 Series LPC Controller (Premium SKU) - 9C43
+USB\VID_138A&PID_003F\0030B2CE8280                          : Validity Sensor
+ACPI\INT33A0\0                                              : Intel(R) Smart Connect Technology Device
+ACPI\INT33A1\1                                              : Standard Power Management Controller
+PCI\VEN_8086&DEV_0A04&SUBSYS_213E103C&REV_09\3&33FD14CA&0&00: PCI standard host CPU bridge
+SWD\MMDEVAPI\{0.0.0.00000000}.{C7766A89-56AC-491B-AAEE-F4F6A2B354AF}: Speakers / HP (IDT High Definition Audio CODEC)
+ACPI\THERMALZONE\LOCZ                                       : ACPI Thermal Zone
+PCI\VEN_8086&DEV_9C26&SUBSYS_213E103C&REV_03\3&33FD14CA&0&E8: Intel(R) 8 Series USB Enhanced Host Controller #1 - 9C26
+STORAGE\VOLUME\{05C9C345-C335-11E2-BE66-806E6F6E6963}#0000000012D00000: Generic volume
+ACPI\PNP0200\4&6792AF4&0                                    : Direct memory access controller
+ROOT\MS_L2TPMINIPORT\0000                                   : WAN Miniport (L2TP)
+ACPI\THERMALZONE\GFXZ                                       : ACPI Thermal Zone
+PCI\VEN_8086&DEV_0A26&SUBSYS_213E103C&REV_09\3&33FD14CA&0&10: Intel(R) HD Graphics 5000
+STORAGE\VOLUME\{05C9C345-C335-11E2-BE66-806E6F6E6963}#0000000000100000: Generic volume
+ACPI\PNP0B00\4&6792AF4&0                                    : System CMOS/real time clock
+ROOT\MS_PPPOEMINIPORT\0000                                  : WAN Miniport (PPPOE)
+ACPI\GENUINEINTEL_-_INTEL64_FAMILY_6_MODEL_69_-_INTEL(R)_CORE(TM)_I7-4650U_CPU_@_1.70GHZ\_0: Intel(R) Core(TM) i7-4650U CPU @ 1.70GHz
+ACPI\GENUINEINTEL_-_INTEL64_FAMILY_6_MODEL_69_-_INTEL(R)_CORE(TM)_I7-4650U_CPU_@_1.70GHZ\_1: Intel(R) Core(TM) i7-4650U CPU @ 1.70GHz
+ACPI\GENUINEINTEL_-_INTEL64_FAMILY_6_MODEL_69_-_INTEL(R)_CORE(TM)_I7-4650U_CPU_@_1.70GHZ\_2: Intel(R) Core(TM) i7-4650U CPU @ 1.70GHz
+ACPI\GENUINEINTEL_-_INTEL64_FAMILY_6_MODEL_69_-_INTEL(R)_CORE(TM)_I7-4650U_CPU_@_1.70GHZ\_3: Intel(R) Core(TM) i7-4650U CPU @ 1.70GHz
+HDAUDIO\FUNC_01&VEN_111D&DEV_76E0&SUBSYS_103C213E&REV_1003\4&1A85E19F&0&0001: IDT High Definition Audio CODEC
+ACPI\THERMALZONE\BATZ                                       : ACPI Thermal Zone
+PCI\VEN_8086&DEV_9C16&SUBSYS_213E103C&REV_E3\3&33FD14CA&0&E3: Intel(R) 8 Series PCI Express Root Port #4 - 9C16
+USB\VID_05C8&PID_035B&MI_00\7&31F84573&0&0000               : HP HD Webcam
+ROOT\MSSMBIOS\0000                                          : Microsoft System Management BIOS Driver
+STORAGE\VOLUME\{05C9C345-C335-11E2-BE66-806E6F6E6963}#0000000021100000: Generic volume
+ACPI\INT340E\2&DABA3FF&1                                    : Motherboard resources
+ROOT\SYSTEM\0000                                            : Plug and Play Software Device Enumerator
+PCI\VEN_8086&DEV_9C20&SUBSYS_213E103C&REV_03\3&33FD14CA&0&D8: High Definition Audio Controller
+PCI\VEN_8086&DEV_08B1&SUBSYS_C0708086&REV_5B\001500FFFFCB274E00: Network Controller
+STORAGE\VOLUME\{05C9C345-C335-11E2-BE66-806E6F6E6963}#0000000019100000: Generic volume
+ROOT\RDPBUS\0000                                            : Remote Desktop Device Redirector Bus
+BTH\MS_BTHPAN\7&35166D2&0&2                                 : Bluetooth Device (Personal Area Network)
+ROOT\MEDIA\0000                                             : CyberLink Webcam Sharing Manager 4.2
+PCI\VEN_8086&DEV_9C31&SUBSYS_213E103C&REV_03\3&33FD14CA&0&A0: Intel(R) USB 3.0 eXtensible Host Controller - 0100 (Microsoft)
+ACPI\HPQ8001\4&6792AF4&0                                    : Standard 101/102-Key or Microsoft Natural PS/2 Keyboard for HP Hotkey Support
+96 matching device(s) found.

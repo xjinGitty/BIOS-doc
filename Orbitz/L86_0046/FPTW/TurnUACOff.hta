@@ -1,0 +1,160 @@
+  <Title>HP BNB BIOS Update Warning</Title>
+  <HTA:APPLICATION ID="MyMessageBox" 
+   SCROLL="No"             
+   SCROLLFLAT ="No"  
+   SingleInstance="Yes"   
+   ShowInTaskbar="Yes"             
+   SysMenu="Yes"                  
+   MaximizeButton="No"          
+   MinimizeButton="No"  
+   Border="Thin" 
+   BORDERSTYLE ="complex" 
+   INNERBORDER ="No"  
+   Caption="Yes"                  
+   WindowState="Normal" 
+   APPLICATIONNAME="MainApp"
+   Icon="warn.ico">
+<STYLE type="text/css">
+  BODY
+   {
+        Font-Size:18pt;
+        Font-Weight:Bold;
+        Font-Family:helvetica,verdana,arial;
+        Color:#008040;
+        BackGround-Color:Transparent;
+        filter:progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#FFFF00',EndColorStr='#FFFF00);
+        Margin-Top:5;
+        Margin-Bottom:5;
+        Margin-Left:5;
+        Margin-Right:5;
+        Padding-Top:3;
+        Padding-Bottom:3;
+        Padding-Left:5;
+        Padding-Right:5;
+        Text-Align:Left;
+        Vertical-Align:Top;
+   }
+  TD.Type1
+   {
+   Margin-Left:21;
+   Padding-Left:15;
+   }
+  BUTTON
+   { 
+        Height:18pt;  
+        width:61pt;
+        Cursor:Hand;
+        Font:12pt;
+        Font-weight:bold;
+        Font-family:helvetica,verdana,arial;
+        Color:#404040;
+        Text-Align:Center;
+        Vertical-Align:Middle;
+        filter:progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#E5E5E5',EndColorStr='#7D7D7D');
+        Margin:1;
+        Padding:2;
+        Border-Left: 1px Transparent;  
+        Border-Right: 2px Transparent;
+        Border-Top: 1px Transparent;   
+        Border-Bottom: 2px Transparent;
+   }
+</STYLE>
+ <script Language='VBSCRIPT'>
+'-> Scripting Objects 
+  Dim Act :Set Act = CreateObject("Wscript.Shell")
+  Dim Fso :Set Fso = CreateObject("Scripting.FileSystemObject")
+  Dim Cmd :Cmd = Act.ExpandEnvironmentStrings("%Temp%") & "\MyReturn.cmd"
+'-> Varibles
+  Dim Ts
+'-> Resize And Move Window
+  Dim Wth :Wth = int(960)
+  Dim Hht :Hht = int(540)
+  window.ResizeTo Wth, Hht
+  MoveTo ((Screen.Width / 2) - (Wth / 2)),((Screen.Height / 2) - (Hht / 2))
+'-> Text Display Varible
+  Dim F1 :F1 = "<FONT STYLE='Font:16pt;Color:#002060;Font-Weight:Bold;'>"
+  Dim F2 :F2 = "<FONT STYLE='Font:24pt;Color:#FF0000;Font-Weight:Bold;'>"
+  Dim F3 :F3 = "<FONT STYLE='Font:16pt;Color:#FF0000;Font-Weight:Bold;'>"
+'-> Count Down Display Varibles
+  Dim idTimer
+  Dim C1 :C1 = 300
+  Dim D1 :D1 = 1
+'-> Yes Varibles
+  Dim Y_DoIt
+'-> OnLoad Action
+   Function Window_OnLoad()
+        Counter()
+        txt1.innerHTML = F2 & "Attention!!!</FONT><P>"
+        txt2.innerHTML = F1 & "    Please Turn User Account Control (</FONT>" & F3 & "UAC</FONT>" & F1 & ") to OFF in Windows Control Panel before BIOS Update.</FONT><P>"
+        txt3.innerHTML = F1 & "You will need to reboot the system after turn UAC off before execute Update.bat again.</FONT><P>"
+        txt4.innerHTML = F1 & "or</FONT><P>"
+        txt5.innerHTML = F1 & "Execute Update.bat under CMD with Administrator privilege.</FONT><P>"
+    End Function
+'-> Count Down Function
+   Function Counter()
+   End Function
+   
+'-> No Button Action
+   Function No_Action()
+        Bttn_Y.disabled = True
+        txt3.innerHTML = Replace(F1,"002060","AD0101") & "No Was Selected Cancel All Operation</FONT>"
+         '-> Create The Temp Cmd File For Yes
+          Set Ts = Fso.CreateTextFile(Cmd)
+           Ts.WriteLine "@Echo && CLS && MODE 55,5 && COLOR F9"
+           Ts.WriteLine "Set Reply=No"
+           Ts.Close
+        window.clearTimeout(idTimer)
+        idTimer = window.setTimeout("MyTimer2", 5000, "VBScript")
+   Exit Function
+   End Function
+'-> OK Button Action
+   Function OK_Action()
+        window.close()       
+   Exit Function
+   End Function
+
+'-> Yes Button Action
+   Function Yes_Action()
+        Y_DoIt = True
+   Exit Function
+   End Function
+'-> Yes Button Worker
+   Function Yes_Work()
+         Bttn_N.disabled = True
+         txt3.innerHTML = Replace(F1,"002060","006020") & "Processing Yes Selection</FONT>"
+         '-> Create The Temp Cmd File For Yes
+          Set Ts = Fso.CreateTextFile(Cmd)
+           Ts.WriteLine "@Echo && CLS && MODE 55,5 && COLOR F9"
+           Ts.WriteLine "Set Reply=Yes"
+           Ts.Close
+         window.clearTimeout(idTimer)
+         idTimer = window.setTimeout("MyTimer1", 3000, "VBScript")
+   Exit Function
+   End Function
+'-> Close The HTA Window
+   Function HtaExit() 
+        window.clearTimeout(idTimer)
+        If Y_DoIt = True Then
+         Yes_Work()
+        End If  
+   End Function
+ </SCRIPT>
+ <BODY Scroll='No'>
+<!-- txt1 Display -->
+ <Table><TD Class='Type1'><Span ID='txt1'></Span></TD></Table>
+<!-- txt2 Display -->
+ <Table><TD Class='Type1'><Span ID='txt2'></Span></TD></Table>
+<!-- txt3 Display -->
+ <Table><TD Class='Type1'><Span ID='txt3'></Span></TD></Table>
+<!-- txt4 Display -->
+ <Table><TD Class='Type1'><Span ID='txt4'></Span></TD></Table>
+<!-- txt5 Display -->
+ <Table><TD Class='Type1'><Span ID='txt5'></Span></TD></Table>
+<!-- txt6 Display -->
+ <Table><TD Class='Type1'><Span ID='txt6'></Span></TD></Table>
+<!-- Button Display -->
+ <Table Style='Margin-Top:7pt;' Align='Center'>
+<!-- Button 01 -->
+  <TD><BUTTON ID='Bttn_OK' OnClick='OK_Action()'>OK</BUTTON></TD>
+ </Table>
+ </BODY>

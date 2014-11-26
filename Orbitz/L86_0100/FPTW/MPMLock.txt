@@ -1,0 +1,4 @@
+English
+Manufacturing Programming Mode
+	*Lock
+	Unlock

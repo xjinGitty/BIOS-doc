@@ -1,0 +1,17 @@
+:CheckDesclock
+
+MEInfoWin -fwsts > vpro.log
+find "0x1E00024" vpro.log
+if errorlevel 1 goto DESCunlocked
+goto DESClocked
+
+
+DESClocked:
+goto {}
+
+
+DESCunlocked:
+MEInfoWin -feat "Intel(R) AMT State" > AMT.log
+find "Enable" AMT.log
+if errorlevel 1 goto VproOff
+goto VprOn

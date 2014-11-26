@@ -1,0 +1,1 @@
+fptw -U -IN VONAT.txt
